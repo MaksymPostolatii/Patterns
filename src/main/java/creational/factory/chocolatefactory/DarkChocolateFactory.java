@@ -1,14 +1,14 @@
 package creational.factory.chocolatefactory;
 
-import creational.factory.chocolate.Chocolate;
-import creational.factory.chocolate.DarkChocolate;
+import creational.factory.chocolate.ChocolateDepartment;
+import creational.factory.chocolate.DarkChocolateDepartment;
 
 public class DarkChocolateFactory extends ChocolateFactory {
     public DarkChocolateFactory(int cocoaContent) {
         super(cocoaContent);
     }
 
-    public Chocolate createChocolateFactory() {
-        return new DarkChocolate();
+    public ChocolateDepartment createChocolateFactory() {
+        return new DarkChocolateDepartment();
     }
 }

@@ -1,6 +1,6 @@
 package creational.factory;
 
-import creational.factory.chocolate.Chocolate;
+import creational.factory.chocolate.ChocolateDepartment;
 import creational.factory.chocolatefactory.ChocolateFactory;
 import creational.factory.chocolatefactory.DarkChocolateFactory;
 import creational.factory.chocolatefactory.MilkChocolateFactory;
@@ -21,8 +21,8 @@ public class ChocolateFactoryManager {
 
     public static void main(String[] args) throws CocoaException {
         ChocolateFactory factory = makeChocolateByCocoaContent(COCOA_CONTENT);
-        Chocolate chocolate = factory.createChocolateFactory();
-        chocolate.makeChocolate(factory.getCocoaContent());
+        ChocolateDepartment chocolateDepartment = factory.createChocolateFactory();
+        chocolateDepartment.makeChocolate(factory.getCocoaContent());
     }
 
     private static ChocolateFactory makeChocolateByCocoaContent(int cocoaContent) throws CocoaException {

@@ -1,5 +1,5 @@
 package creational.factory.chocolate;
 
-public interface Chocolate {
+public interface ChocolateDepartment {
     void makeChocolate(int cocoaContent);
 }
