@@ -1,5 +1,6 @@
 package structural.facade;
 
+import structural.facade.exception.FoundationException;
 import structural.facade.house.Floor;
 import structural.facade.house.House;
 import structural.facade.house.Roof;
@@ -13,9 +14,13 @@ public class BuildingProcess {
 
     public void buildHouse() {
         floor.layFoundation();
-        house.buildHouseAfterFoundation(floor);
-        wall.buildWalls();
-        roof.buildRoof();
-        System.out.println("\nThe house is built!");
+        try {
+            house.buildHouseAfterFoundation(floor);
+            wall.buildWalls();
+            roof.buildRoof();
+            System.out.println("\nThe house is built!");
+        } catch (FoundationException e) {
+            e.printStackTrace();
+        }
     }
 }

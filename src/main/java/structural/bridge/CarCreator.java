@@ -14,6 +14,6 @@ public class CarCreator {
                 new TeslaEngine(new ElectricEngineer()),
                 new VolgaEngine(new MechanicEngineer())
         };
-        Arrays.stream(engines).forEach(Engine::createCarFromLayout);
+        Arrays.stream(engines).forEach(Engine::createEngine);
     }
 }
