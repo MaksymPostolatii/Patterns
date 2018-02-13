@@ -9,6 +9,6 @@ public class VolgaEngine extends Engine {
 
     public void createEngine() {
         System.out.println("Volga engine creation in progress...");
-        engineer.createEngine();
+        engineer.createSparePart();
     }
 }

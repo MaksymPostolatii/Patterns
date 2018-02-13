@@ -9,6 +9,6 @@ public class TeslaEngine extends Engine {
 
     public void createEngine() {
         System.out.println("Tesla engine creation in progress...");
-        engineer.createEngine();
+        engineer.createSparePart();
     }
 }
