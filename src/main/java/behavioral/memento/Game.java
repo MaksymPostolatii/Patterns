@@ -1,7 +1,5 @@
 package behavioral.memento;
 
-import structural.adapter.SamsungMusicPlayer;
-
 import java.util.Date;
 
 public class Game {

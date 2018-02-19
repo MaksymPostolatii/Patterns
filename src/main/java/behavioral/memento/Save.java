@@ -6,7 +6,7 @@ public class Save {
     private final String gameStatus;
     private final Date date;
 
-    public Save(String gameStatus) {
+    Save(String gameStatus) {
         this.gameStatus = gameStatus;
         this.date = new Date();
     }
